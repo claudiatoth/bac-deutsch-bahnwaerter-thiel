@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAC kompakt: Bahnwärter Thiel (Gerhart Hauptmann) · Claudia Toth</title>
+    <meta property="og:title" content="BAC kompakt: Bahnwärter Thiel — Gerhart Hauptmann · Claudia Toth">
+    <meta property="og:description" content="Alles für das Abitur / BAC Deutsch (Muttersprache) zu Gerhart Hauptmanns Novelle „Bahnwärter Thiel": Figuren, Themen, Symbole, Aufbau, Interpretation, BAC-Training mit Musterantworten und Modell-Prüfung · Claudia Toth">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta name="description" content="Bahnwärter Thiel (Hauptmann) — kompakte BAC-Vorbereitung (germană maternă): Figuren, Themen, Symbole, Erzähltechnik, Interpretation, Prüfungsfragen mit Musterantworten, Modell-Prüfung, Selbsttest · Claudia Toth">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#werk" onclick="openSection(0)">📖 Das Werk</a></li>
+            <li><a href="#training" onclick="openSection(1)">🎯 BAC-Training</a></li>
+            <li><a href="#ex1" onclick="openSection(2)">Übung 1</a></li>
+            <li><a href="#ex2" onclick="openSection(3)">Übung 2</a></li>
+            <li><a href="#ex3" onclick="openSection(4)">Übung 3</a></li>
+            <li><a href="#ex4" onclick="openSection(5)">Übung 4</a></li>
+            <li><a href="#ex5" onclick="openSection(6)">Übung 5</a></li>
+            <li><a href="#modell" onclick="openSection(7)">📝 Modelle</a></li>
+            <li><a href="#flashcards" onclick="openSection(8)">📇 Karten</a></li>
+            <li><a href="#final-test" onclick="openSection(9)">✅ Selbsttest</a></li>
+            <li><a href="bahnwaerter-thiel-bac.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <h1>ʚଓ Bahnwärter Thiel — BAC kompakt</h1>
+            <p class="subtitle">Gerhart Hauptmann (1888) · Naturalismus · Novellistische Studie — alles fürs Abitur / BAC Deutsch (Muttersprache)</p>
+            <p>Claudia Toth · Limba și literatura germană maternă</p>
+        </div>
+
+        <div class="claudia-intro">
+            <img src="images/annette.png" alt="Claudia" class="claudia-intro-avatar">
+            <div class="claudia-intro-text">
+                <strong>Willkommen!</strong> Diese Lektion ist dein <strong>„BAC auf einen Blick"</strong> zu <em>Bahnwärter Thiel</em> — alles Wichtige fürs Examen, kompakt und ohne Ballast.
+                Lies zuerst <strong>„Das Werk verstehen"</strong>, übe dann mit den <strong>Prüfungsfragen</strong> und der <strong>Modell-Prüfung</strong>, und teste dich am Ende selbst.
+                <span class="ro-tip">➡️ Sfat: secțiunea „BAC auf einen Blick" e pagina de memorat pe de rost — autor, an, epocă, gen îți trebuie automat în orice Einleitung.</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- ============ 0. DAS WERK VERSTEHEN ============ -->
+            <div class="section" id="werk">
+                <div class="section-header" onclick="toggleMainSection(0)"><h3>ʚଓ 📖 Das Werk verstehen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-0"><div id="theory-container"></div></div>
+            </div>
+
+            <!-- ============ 1. BAC-TRAINING & SCHREIBVORLAGEN ============ -->
+            <div class="section" id="training">
+                <div class="section-header" onclick="toggleMainSection(1)"><h3>ʚଓ 🎯 BAC-Training &amp; Schreibvorlagen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-1"><div id="training-container"></div></div>
+            </div>
+
+            <!-- ============ 2. ÜBUNG 1 ============ -->
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(2)"><h3>ʚଓ 🧠 Übung 1: Wissen prüfen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-2">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(1)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(1)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <!-- ============ 3. ÜBUNG 2 ============ -->
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(3)"><h3>ʚଓ 🧠 Übung 2: Zitate &amp; ihre Bedeutung</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(2)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(2)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <!-- ============ 4. ÜBUNG 3 ============ -->
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(4)"><h3>ʚଓ 🧠 Übung 3: Begriffe &amp; Stilmittel</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(3)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(3)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <!-- ============ 5. ÜBUNG 4 ============ -->
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(5)"><h3>ʚଓ 🧠 Übung 4: Inhaltsangabe vervollständigen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(4)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(4)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <!-- ============ 6. ÜBUNG 5 ============ -->
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(6)"><h3>ʚଓ 🧠 Übung 5: Bewerbungsbrief (Subiect III)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-6">
+                    <div id="ex5-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(5)">✓ Prüfen</button>
+                        <button class="btn btn-reset" onclick="resetExercise(5)">↻ Zurücksetzen</button>
+                    </div>
+                    <div class="score" id="score-5"></div>
+                </div>
+            </div>
+
+            <!-- ============ 7. MODELL-PRÜFUNG ============ -->
+            <div class="section" id="modell">
+                <div class="section-header" onclick="toggleMainSection(7)"><h3>ʚଓ 📝 Modell-Prüfung — Subiect I, II &amp; III komplett gelöst</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-7"><div id="modell-container"></div></div>
+            </div>
+
+            <!-- ============ 8. FLASHCARDS ============ -->
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(8)"><h3>ʚଓ 📇 Lernkarten — Figuren, Begriffe, Zitate</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-8"><div id="flashcards-container"></div></div>
+            </div>
+
+            <!-- ============ 9. SELBSTTEST ============ -->
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(9)"><h3>ʚଓ ✅ Selbsttest — Bist du bereit fürs BAC?</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-9"><div id="final-test-container"></div></div>
+            </div>
+
+            <div class="theory-box" style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; font-weight: bold; color: #065f46;">🎉 Viel Erfolg beim Abitur!</p>
+                <p style="margin-top: 12px;">Du kennst jetzt Bahnwärter Thiel, den zentralen Konflikt zwischen <strong>Pflicht und Trieb</strong>, das Ringen von <strong>Mensch und Maschine</strong>, die Symbole (die Eisenbahn, die Kiefernheide, die Wärterbude) und Hauptmanns <strong>naturalistische Milieuschilderung</strong>. Mit den <strong>Musterantworten</strong> und der <strong>Modell-Prüfung</strong> hast du für jedes Subiect eine klare Struktur. <em>Denk an die Einleitung: Autor — Werk — Jahr — Epoche!</em> 🚂</p>
+                <p style="margin-top: 10px; font-style: italic; color: #5A5147;">Limba și literatura germană maternă · Claudia Toth</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theory.js"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="final-test.js"></script>
+    <script src="modell.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
