@@ -6,7 +6,8 @@
 function normalizeAnswer(s) {
     return (s || '')
         .toLowerCase()
-        .replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u').replace(/ß/g, 'ss')
+        .replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u')
+        .replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u').replace(/ß/g, 'ss')
         .replace(/[.!?;:,]/g, '')
         .replace(/\s+/g, ' ')
         .trim();
